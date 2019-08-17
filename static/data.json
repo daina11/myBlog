@@ -1,0 +1,61 @@
+ {
+ "blog" : [ 
+     {
+    "id": 1,
+    "title": "vue+element-ui博客系统",
+    "content": "基于vue和element-Ui的个人博客系统开发的各种踩坑之旅。",
+    "titleOne":"vue 在使用element-ui时import 'element-ui/lib/theme-chalk/index.css时一直报错",
+    "contentOne":"解决方法：.在package.json中确认style-loader是否下载，如果下载，是否在config文件中进行配置。如果仍然无法正常运行，则是因为在elment-ui中css中运用了饿了么的字体库，即.wtff文件，这导致任然缺少一个解析器，即url-loader",
+    "titleTwo":"elementUi所有字体图标全部显示方框",
+    "contentTwo":"解决方法：原因是webpack.base.conf.js里边多了一个loader: 'url-loader',删掉就行。",
+    "titleThree":"引入第三方图标的css时报错",
+    "contentThree":"解决方法：webpack.base.conf.js文件下的加上{ test:/.css$/, loader:'style-loader!css-loader!stylus-loader',include:['node bulid/dev-server.js']",
+    "time": "2019-7-29",
+    "like": 10,
+    "look":999,
+    "collect": 5,
+    "msg": "/../static/images/blog.png",
+    "msgOne": "/../static/images/bugOne.png",
+    "msgTwo": "/../static/images/bug.png"
+    },
+    {
+    "id": 2,
+    "title": "python爬取贴吧",
+    "content": "初次接触爬虫的小尝试",
+    "titleOne":"观察贴吧的url",
+    "contentOne":"取得要爬取的目标网址，网址后面的pn为一页加50",
+    "titleTwo":"爬取过程的坑",
+    "contentTwo":"爬取过程一直取不到需要的内容，程序又没出错，找了好久才发现要爬取的内容被注释掉了，修改程序",
+    "titleThree":"初步完成",
+    "contentThree":"成功爬取出贴吧的回复，爬出来的数据有待进一步清理",
+    "time": "2019-6-20",
+    "like": 66,
+    "look":899,
+    "collect": 19,
+    "msg": "/../static/images/spider.png",
+    "msgOne": "/../static/images/spiderOne.png",
+    "msgTwo": "/../static/images/spider.png",
+    "msgThree": "/../static/images/spiderThree.png"
+    },
+    {
+    "id": 3,
+    "title": "电影推荐小程序",
+    "content": "类豆瓣电影推荐小程序",
+    "titleOne":"获取豆瓣的API",
+    "contentOne":"豆瓣api不知道什么原因关闭了，小程序接口用不了，上github重新找的接口",
+    "titleTwo":"使用新的接口",
+    "contentTwo":"测试可不可以用，能成功获取到数据，把接口用到小程序里",
+    "titleThree":"小程序成功运行",
+    "contentThree":"如下图小程序能正常运行了，小程序有待进一步完善",
+    "time": "2019-7-9",
+    "like": 699,
+    "look":123,
+    "collect": 99,
+    "msg": "/../static/images/xcxTwo.png",
+    "msgOne":"/../static/images/xcxOne.png",
+    "msgTwo": "/../static/images/xcx.png",
+    "msgThree": "/../static/images/xcxTwo.png"
+    }
+    
+]
+}
